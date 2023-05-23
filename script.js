@@ -6,7 +6,12 @@ function CalcularImpuestos(precioInicial){
     alert("Precio original: $"+precioInicial+"\nImpuesto pais: $"+impPais+"\nImpuesto a las ganancias: $"+precioGan+"\nPrecio total: $"+precioTotal);
 }
 
+while(CalcularImpuestos){
 let precioJuego = parseFloat(prompt('ingresa el precio de tu juego en pesos (sin impuestos)'));
 
+if(precioJuego > 0){
 CalcularImpuestos(precioJuego);
-
+}else{
+    alert("ingrese un precio valido");
+}
+}
